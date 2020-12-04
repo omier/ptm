@@ -2,38 +2,27 @@ package command;
 
 import expression.Expression;
 
-public class CommandExpression implements Expression {
-	private Command c;
-	private String[] s;
+public class CommandExpression implements Expression{
 
-	public CommandExpression(Command c) {
+	CommonCommand c;
+	
+	
+	
+	public CommandExpression(CommonCommand c) {
+		super();
 		this.c = c;
 	}
 
-	public Command getC() {
-		return c;
-	}
-
-	public void setC(Command c) {
-		this.c = c;
-	}
-
-	public String[] getS() {
-		return s;
-	}
-
-	public void setS(String[] s) {
-		this.s = s;
-	}
 
 	@Override
 	public double calculate() {
 		try {
-			c.doCommand(s);
+			c.execute();
 		} catch (Exception e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
 		return 0;
 	}
+
 }

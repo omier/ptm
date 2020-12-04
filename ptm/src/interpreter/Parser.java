@@ -1,5 +1,5 @@
 package interpreter;
 
-public interface Parser {
-    public void parse();
+public class Parser implements IParser {
+
 }
