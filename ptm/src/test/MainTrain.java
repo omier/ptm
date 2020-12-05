@@ -20,7 +20,7 @@ public class MainTrain {
 
 		String[] test2={
 				"var x",	
-				"x = "+rand,	
+				"x="+rand,	
 				"var y=x+3",	
 				"return y"	
 		};

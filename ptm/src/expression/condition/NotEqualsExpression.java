@@ -4,7 +4,6 @@ import expression.BinaryExpression;
 import expression.Expression;
 
 public class NotEqualsExpression extends BinaryExpression {
-
 	public NotEqualsExpression(Expression left, Expression right) {
 		super(left, right);
 	}
@@ -13,5 +12,4 @@ public class NotEqualsExpression extends BinaryExpression {
 	public double calculate() {
 		return left.calculate() != right.calculate() ? 1 : 0;
 	}
-
 }

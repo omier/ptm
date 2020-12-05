@@ -1,4 +1,5 @@
 package expression.condition;
+
 import expression.BinaryExpression;
 import expression.Expression;
 
@@ -12,5 +13,4 @@ public class EqualsExpression extends BinaryExpression {
 	public double calculate() {
 		return left.calculate() == right.calculate() ? 1 : 0;
 	}
-	
 }

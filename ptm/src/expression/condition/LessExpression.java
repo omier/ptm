@@ -13,5 +13,4 @@ public class LessExpression extends BinaryExpression {
 	public double calculate() {
 		return left.calculate() < right.calculate() ? 1 : 0;
 	}
-
 }

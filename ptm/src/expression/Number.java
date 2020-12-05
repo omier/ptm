@@ -1,9 +1,8 @@
 package expression;
 
-public class Number implements Expression
-{
+public class Number implements Expression {
 	private double value;
-	
+
 	public Number(double value) {
 		this.value = value;
 	}

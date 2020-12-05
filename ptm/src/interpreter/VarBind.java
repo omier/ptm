@@ -1,9 +1,8 @@
 package interpreter;
 
-public class VarBind extends VarTable
-{
+public class VarBind extends VarTable {
 	private String value;
-	
+
 	public VarBind(String value) {
 		super("bind");
 		this.value = value;
@@ -15,6 +14,6 @@ public class VarBind extends VarTable
 
 	@Override
 	public void setValue(Object o) {
-		this.value = (String)o;
+		this.value = (String) o;
 	}
 }

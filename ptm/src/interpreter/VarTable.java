@@ -1,9 +1,8 @@
 package interpreter;
 
-public abstract class VarTable
-{
+public abstract class VarTable {
 	protected String type;
-	
+
 	public VarTable(String type) {
 		this.type = type;
 	}
@@ -16,7 +15,7 @@ public abstract class VarTable
 		this.type = type;
 	}
 
-	public abstract Object getValue(); 
+	public abstract Object getValue();
+
 	public abstract void setValue(Object o);
-	
 }

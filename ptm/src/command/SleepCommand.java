@@ -1,25 +1,23 @@
 package command;
 
 import java.util.LinkedList;
-
 import expression.ShuntingYard;
 import interpreter.PeekableScanner;
 import interpreter.Server;
 
 public class SleepCommand extends CommonCommand {
 	String timePar;
-	
+
 	public SleepCommand(Server server) {
 		super(server);
 	}
 
 	@Override
 	public int execute() throws Exception {
-		// No need to catch Sleep Exception.
 		try {
-			Thread.sleep((long)(server.getCachedExp().get(timePar).calculate()));
-		}
-		catch(Exception e) {}
+			Thread.sleep((long) (server.getCachedExp().get(timePar).calculate()));
+		} catch (Exception e) {}
+		
 		return 0;
 	}
 
@@ -29,10 +27,9 @@ public class SleepCommand extends CommonCommand {
 		ShuntingYard sy = new ShuntingYard();
 		server.getCachedExp().put(par1, sy.calc(par1, server));
 		this.timePar = par1;
-		
+
 		doCommands.add(this);
-		
+
 		return false;
 	}
-
 }

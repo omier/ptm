@@ -1,9 +1,8 @@
 package interpreter;
 
-public class VarDouble extends VarTable
-{
+public class VarDouble extends VarTable {
 	private double value;
-	
+
 	public VarDouble(double value) {
 		super("double");
 		this.value = value;
@@ -19,8 +18,7 @@ public class VarDouble extends VarTable
 
 	@Override
 	public void setValue(Object o) {
-		this.value = (double)value;
-		
+		this.value = (double) value;
+
 	}
-	
 }
