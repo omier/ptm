@@ -1,14 +1,16 @@
-package expression;
+package Expression;
 
 public class Number implements Expression {
-	private double value;
+	private double val;
 
-	public Number(double value) {
-		this.value = value;
+	public Number(double val) {
+		super();
+		this.val = val;
 	}
 
 	@Override
 	public double calculate() {
-		return value;
+		return val;
 	}
+
 }

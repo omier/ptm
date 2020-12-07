@@ -1,6 +1,7 @@
-package expression;
+package Expression;
 
 public class Mul extends BinaryExpression {
+
 	public Mul(Expression left, Expression right) {
 		super(left, right);
 	}
